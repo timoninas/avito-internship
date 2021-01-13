@@ -1,0 +1,642 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7715B51225AED3FC000650A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7715B51125AED3FC000650A3 /* AppDelegate.swift */; };
+		7715B51425AED3FC000650A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7715B51325AED3FC000650A3 /* SceneDelegate.swift */; };
+		7715B51625AED3FC000650A3 /* ViewMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7715B51525AED3FC000650A3 /* ViewMain.swift */; };
+		7715B51925AED3FC000650A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7715B51725AED3FC000650A3 /* Main.storyboard */; };
+		7715B51B25AED3FE000650A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7715B51A25AED3FE000650A3 /* Assets.xcassets */; };
+		7715B51E25AED3FE000650A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7715B51C25AED3FE000650A3 /* LaunchScreen.storyboard */; };
+		7715B52925AED3FF000650A3 /* avito_internshipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7715B52825AED3FF000650A3 /* avito_internshipTests.swift */; };
+		7715B53425AED3FF000650A3 /* avito_internshipUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7715B53325AED3FF000650A3 /* avito_internshipUITests.swift */; };
+		7715B54525AED42E000650A3 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7715B54425AED42E000650A3 /* Builder.swift */; };
+		7715B54A25AED4D1000650A3 /* PresenterMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7715B54925AED4D1000650A3 /* PresenterMain.swift */; };
+		7715B56525AEE031000650A3 /* SuggestionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7715B56425AEE031000650A3 /* SuggestionViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7715B52525AED3FF000650A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7715B50625AED3FC000650A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7715B50D25AED3FC000650A3;
+			remoteInfo = "avito-internship";
+		};
+		7715B53025AED3FF000650A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7715B50625AED3FC000650A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7715B50D25AED3FC000650A3;
+			remoteInfo = "avito-internship";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7715B50E25AED3FC000650A3 /* avito-internship.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "avito-internship.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7715B51125AED3FC000650A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7715B51325AED3FC000650A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7715B51525AED3FC000650A3 /* ViewMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewMain.swift; sourceTree = "<group>"; };
+		7715B51825AED3FC000650A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7715B51A25AED3FE000650A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7715B51D25AED3FE000650A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7715B51F25AED3FE000650A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7715B52425AED3FE000650A3 /* avito-internshipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "avito-internshipTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7715B52825AED3FF000650A3 /* avito_internshipTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = avito_internshipTests.swift; sourceTree = "<group>"; };
+		7715B52A25AED3FF000650A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7715B52F25AED3FF000650A3 /* avito-internshipUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "avito-internshipUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7715B53325AED3FF000650A3 /* avito_internshipUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = avito_internshipUITests.swift; sourceTree = "<group>"; };
+		7715B53525AED3FF000650A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7715B54425AED42E000650A3 /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
+		7715B54925AED4D1000650A3 /* PresenterMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterMain.swift; sourceTree = "<group>"; };
+		7715B56425AEE031000650A3 /* SuggestionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7715B50B25AED3FC000650A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7715B52125AED3FE000650A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7715B52C25AED3FF000650A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7715B50525AED3FC000650A3 = {
+			isa = PBXGroup;
+			children = (
+				7715B51025AED3FC000650A3 /* avito-internship */,
+				7715B52725AED3FF000650A3 /* avito-internshipTests */,
+				7715B53225AED3FF000650A3 /* avito-internshipUITests */,
+				7715B50F25AED3FC000650A3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7715B50F25AED3FC000650A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7715B50E25AED3FC000650A3 /* avito-internship.app */,
+				7715B52425AED3FE000650A3 /* avito-internshipTests.xctest */,
+				7715B52F25AED3FF000650A3 /* avito-internshipUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7715B51025AED3FC000650A3 /* avito-internship */ = {
+			isa = PBXGroup;
+			children = (
+				7715B51125AED3FC000650A3 /* AppDelegate.swift */,
+				7715B51325AED3FC000650A3 /* SceneDelegate.swift */,
+				7715B56025AED4FE000650A3 /* Builder */,
+				7715B55125AED4E9000650A3 /* MainModule */,
+				7715B51725AED3FC000650A3 /* Main.storyboard */,
+				7715B51A25AED3FE000650A3 /* Assets.xcassets */,
+				7715B51C25AED3FE000650A3 /* LaunchScreen.storyboard */,
+				7715B51F25AED3FE000650A3 /* Info.plist */,
+			);
+			path = "avito-internship";
+			sourceTree = "<group>";
+		};
+		7715B52725AED3FF000650A3 /* avito-internshipTests */ = {
+			isa = PBXGroup;
+			children = (
+				7715B52825AED3FF000650A3 /* avito_internshipTests.swift */,
+				7715B52A25AED3FF000650A3 /* Info.plist */,
+			);
+			path = "avito-internshipTests";
+			sourceTree = "<group>";
+		};
+		7715B53225AED3FF000650A3 /* avito-internshipUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7715B53325AED3FF000650A3 /* avito_internshipUITests.swift */,
+				7715B53525AED3FF000650A3 /* Info.plist */,
+			);
+			path = "avito-internshipUITests";
+			sourceTree = "<group>";
+		};
+		7715B55125AED4E9000650A3 /* MainModule */ = {
+			isa = PBXGroup;
+			children = (
+				7715B55825AED4F0000650A3 /* View */,
+				7715B55C25AED4F4000650A3 /* Presenter */,
+			);
+			path = MainModule;
+			sourceTree = "<group>";
+		};
+		7715B55825AED4F0000650A3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7715B51525AED3FC000650A3 /* ViewMain.swift */,
+				7715B56425AEE031000650A3 /* SuggestionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7715B55C25AED4F4000650A3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				7715B54925AED4D1000650A3 /* PresenterMain.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		7715B56025AED4FE000650A3 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				7715B54425AED42E000650A3 /* Builder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7715B50D25AED3FC000650A3 /* avito-internship */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7715B53825AED3FF000650A3 /* Build configuration list for PBXNativeTarget "avito-internship" */;
+			buildPhases = (
+				7715B50A25AED3FC000650A3 /* Sources */,
+				7715B50B25AED3FC000650A3 /* Frameworks */,
+				7715B50C25AED3FC000650A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "avito-internship";
+			productName = "avito-internship";
+			productReference = 7715B50E25AED3FC000650A3 /* avito-internship.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7715B52325AED3FE000650A3 /* avito-internshipTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7715B53B25AED3FF000650A3 /* Build configuration list for PBXNativeTarget "avito-internshipTests" */;
+			buildPhases = (
+				7715B52025AED3FE000650A3 /* Sources */,
+				7715B52125AED3FE000650A3 /* Frameworks */,
+				7715B52225AED3FE000650A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7715B52625AED3FF000650A3 /* PBXTargetDependency */,
+			);
+			name = "avito-internshipTests";
+			productName = "avito-internshipTests";
+			productReference = 7715B52425AED3FE000650A3 /* avito-internshipTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7715B52E25AED3FF000650A3 /* avito-internshipUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7715B53E25AED3FF000650A3 /* Build configuration list for PBXNativeTarget "avito-internshipUITests" */;
+			buildPhases = (
+				7715B52B25AED3FF000650A3 /* Sources */,
+				7715B52C25AED3FF000650A3 /* Frameworks */,
+				7715B52D25AED3FF000650A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7715B53125AED3FF000650A3 /* PBXTargetDependency */,
+			);
+			name = "avito-internshipUITests";
+			productName = "avito-internshipUITests";
+			productReference = 7715B52F25AED3FF000650A3 /* avito-internshipUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7715B50625AED3FC000650A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					7715B50D25AED3FC000650A3 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					7715B52325AED3FE000650A3 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 7715B50D25AED3FC000650A3;
+					};
+					7715B52E25AED3FF000650A3 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 7715B50D25AED3FC000650A3;
+					};
+				};
+			};
+			buildConfigurationList = 7715B50925AED3FC000650A3 /* Build configuration list for PBXProject "avito-internship" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7715B50525AED3FC000650A3;
+			productRefGroup = 7715B50F25AED3FC000650A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7715B50D25AED3FC000650A3 /* avito-internship */,
+				7715B52325AED3FE000650A3 /* avito-internshipTests */,
+				7715B52E25AED3FF000650A3 /* avito-internshipUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7715B50C25AED3FC000650A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7715B51E25AED3FE000650A3 /* LaunchScreen.storyboard in Resources */,
+				7715B51B25AED3FE000650A3 /* Assets.xcassets in Resources */,
+				7715B51925AED3FC000650A3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7715B52225AED3FE000650A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7715B52D25AED3FF000650A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7715B50A25AED3FC000650A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7715B51625AED3FC000650A3 /* ViewMain.swift in Sources */,
+				7715B51225AED3FC000650A3 /* AppDelegate.swift in Sources */,
+				7715B56525AEE031000650A3 /* SuggestionViewCell.swift in Sources */,
+				7715B51425AED3FC000650A3 /* SceneDelegate.swift in Sources */,
+				7715B54525AED42E000650A3 /* Builder.swift in Sources */,
+				7715B54A25AED4D1000650A3 /* PresenterMain.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7715B52025AED3FE000650A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7715B52925AED3FF000650A3 /* avito_internshipTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7715B52B25AED3FF000650A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7715B53425AED3FF000650A3 /* avito_internshipUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7715B52625AED3FF000650A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7715B50D25AED3FC000650A3 /* avito-internship */;
+			targetProxy = 7715B52525AED3FF000650A3 /* PBXContainerItemProxy */;
+		};
+		7715B53125AED3FF000650A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7715B50D25AED3FC000650A3 /* avito-internship */;
+			targetProxy = 7715B53025AED3FF000650A3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7715B51725AED3FC000650A3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7715B51825AED3FC000650A3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7715B51C25AED3FE000650A3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7715B51D25AED3FE000650A3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7715B53625AED3FF000650A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7715B53725AED3FF000650A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7715B53925AED3FF000650A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X92LK22555;
+				INFOPLIST_FILE = "avito-internship/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Revolvetra.avito-internship";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7715B53A25AED3FF000650A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X92LK22555;
+				INFOPLIST_FILE = "avito-internship/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Revolvetra.avito-internship";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7715B53C25AED3FF000650A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X92LK22555;
+				INFOPLIST_FILE = "avito-internshipTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Revolvetra.avito-internshipTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/avito-internship.app/avito-internship";
+			};
+			name = Debug;
+		};
+		7715B53D25AED3FF000650A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X92LK22555;
+				INFOPLIST_FILE = "avito-internshipTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Revolvetra.avito-internshipTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/avito-internship.app/avito-internship";
+			};
+			name = Release;
+		};
+		7715B53F25AED3FF000650A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X92LK22555;
+				INFOPLIST_FILE = "avito-internshipUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Revolvetra.avito-internshipUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "avito-internship";
+			};
+			name = Debug;
+		};
+		7715B54025AED3FF000650A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X92LK22555;
+				INFOPLIST_FILE = "avito-internshipUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Revolvetra.avito-internshipUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "avito-internship";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7715B50925AED3FC000650A3 /* Build configuration list for PBXProject "avito-internship" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7715B53625AED3FF000650A3 /* Debug */,
+				7715B53725AED3FF000650A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7715B53825AED3FF000650A3 /* Build configuration list for PBXNativeTarget "avito-internship" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7715B53925AED3FF000650A3 /* Debug */,
+				7715B53A25AED3FF000650A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7715B53B25AED3FF000650A3 /* Build configuration list for PBXNativeTarget "avito-internshipTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7715B53C25AED3FF000650A3 /* Debug */,
+				7715B53D25AED3FF000650A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7715B53E25AED3FF000650A3 /* Build configuration list for PBXNativeTarget "avito-internshipUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7715B53F25AED3FF000650A3 /* Debug */,
+				7715B54025AED3FF000650A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7715B50625AED3FC000650A3 /* Project object */;
+}
