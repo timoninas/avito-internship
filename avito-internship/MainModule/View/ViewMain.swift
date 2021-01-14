@@ -139,6 +139,11 @@ extension ViewMain: UICollectionViewDelegate, UICollectionViewDataSource, UIColl
             tmpCell.setup(suggestion: suggestion)
             tmpCell.layer.cornerRadius = 8
             tmpCell.clipsToBounds = true
+            if self.indexPath.item == indexPath.item {
+                tmpCell.select()
+            } else {
+                tmpCell.deselect()
+            }
         }
         return cell
     }

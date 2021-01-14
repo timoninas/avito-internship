@@ -78,7 +78,6 @@ class SuggestionViewCell: UICollectionViewCell {
     
     override func prepareForReuse() {
         super.prepareForReuse()
-        isSelect == true ? select(): deselect()
     }
     
     override func layoutSubviews() {
@@ -94,6 +93,7 @@ class SuggestionViewCell: UICollectionViewCell {
     }
     
     func setup(suggestion: List) {
+        isSelect = false
         // Fetch Image Data
         DispatchQueue.global(qos: .userInitiated).async {
             if let url = URL(string: suggestion.icon.the52X52), let data = try? Data(contentsOf: url) {
@@ -102,13 +102,11 @@ class SuggestionViewCell: UICollectionViewCell {
                 }
             }
         }
-        
         titleLabel.text = suggestion.title
         descriptionLabel.attributedText = suggestion.listDescription?.lineSpaced(5)
         descriptionLabel.text = suggestion.listDescription
         priceLabel.text = suggestion.price
     }
-    
     
     private func layout() {
         self.backgroundColor = #colorLiteral(red: 0.9725490196, green: 0.9725490196, blue: 0.9725490196, alpha: 1)
