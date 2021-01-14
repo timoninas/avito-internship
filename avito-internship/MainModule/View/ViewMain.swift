@@ -133,18 +133,22 @@ extension ViewMain: UICollectionViewDelegate, UICollectionViewDataSource, UIColl
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = newsCollectionView.dequeueReusableCell(withReuseIdentifier: "SuggestionCell", for: indexPath)
+        
         guard let suggestions = presenter.getSuggestion() else { return cell }
         let suggestion = suggestions[indexPath.item]
-        if let tmpCell = cell as? SuggestionViewCell {
-            tmpCell.setup(suggestion: suggestion)
-            tmpCell.layer.cornerRadius = 8
-            tmpCell.clipsToBounds = true
-            if self.indexPath.item == indexPath.item {
-                tmpCell.select()
-            } else {
-                tmpCell.deselect()
-            }
+        
+        guard let tmpCell = cell as? SuggestionViewCell else { return cell }
+        
+        if self.indexPath.item == indexPath.item {
+            tmpCell.select()
+        } else {
+            tmpCell.deselect()
         }
+        
+        tmpCell.setup(suggestion: suggestion)
+        tmpCell.layer.cornerRadius = 8
+        tmpCell.clipsToBounds = true
+        
         return cell
     }
     

@@ -61,6 +61,16 @@ let jsonResponse: String = """
             },
                 "price": "100 ₽",
                 "isSelected": false
+            },
+            {
+                "id": "highlight",
+                "title": "Выделение",
+                "description": "Яркий цвет не даст затеряться среди других объявлений.",
+                "icon": {
+                    "52x52": "https://www.avito.ru/s/common/components/monetization/icons/apps/vas-highlight-52.png"
+                },
+                "price": "299 ₽",
+                "isSelected": true
             }
         ]
     }

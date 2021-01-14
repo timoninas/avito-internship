@@ -78,6 +78,8 @@ class SuggestionViewCell: UICollectionViewCell {
     
     override func prepareForReuse() {
         super.prepareForReuse()
+        isSelectedImageView.image = UIImage()
+        isSelect = false
     }
     
     override func layoutSubviews() {
