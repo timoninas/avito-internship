@@ -7,7 +7,15 @@
 
 import UIKit
 
+protocol SelectionProtocol: class {
+    func select()
+    func deselect()
+}
+
 class SuggestionViewCell: UICollectionViewCell {
+    var isSelect: Bool = false
+    var suggestion: List!
+    
     var statusImageView: UIImageView = {
         let iv = UIImageView()
         iv.contentMode = .scaleAspectFit
@@ -70,41 +78,40 @@ class SuggestionViewCell: UICollectionViewCell {
     
     override func prepareForReuse() {
         super.prepareForReuse()
+        isSelect == true ? select(): deselect()
     }
     
     override func layoutSubviews() {
         super.layoutSubviews()
         layoutIfNeeded()
-    }
-    
-    func setup(suggestion: Suggestion) {
-        self.backgroundColor = #colorLiteral(red: 0.9725490196, green: 0.9725490196, blue: 0.9725490196, alpha: 1)
-        
         addSubview(statusImageView)
         addSubview(isSelectedImageView)
         labelStackView.addArrangedSubview(titleLabel)
         labelStackView.addArrangedSubview(descriptionLabel)
         labelStackView.addArrangedSubview(priceLabel)
         addSubview(labelStackView)
-        
-        if let img = UIImage(named: "checkmark") {
-            isSelectedImageView.image = img
-        }
-        
-        // Fetch Image Data
-        if let url = URL(string: suggestion.icon), let data = try? Data(contentsOf: url) {
-            // Create Image and Update Image View
-            statusImageView.image = UIImage(data: data)
-        }
-        
-        titleLabel.text = suggestion.title
-        descriptionLabel.text = suggestion.description
-        priceLabel.text = suggestion.price
-        
         layout()
     }
     
+    func setup(suggestion: List) {
+        // Fetch Image Data
+        DispatchQueue.global(qos: .userInitiated).async {
+            if let url = URL(string: suggestion.icon.the52X52), let data = try? Data(contentsOf: url) {
+                DispatchQueue.main.async {
+                    self.statusImageView.image = UIImage(data: data)
+                }
+            }
+        }
+        
+        titleLabel.text = suggestion.title
+        descriptionLabel.attributedText = suggestion.listDescription?.lineSpaced(5)
+        descriptionLabel.text = suggestion.listDescription
+        priceLabel.text = suggestion.price
+    }
+    
+    
     private func layout() {
+        self.backgroundColor = #colorLiteral(red: 0.9725490196, green: 0.9725490196, blue: 0.9725490196, alpha: 1)
         layoutImageView()
         layoutLabels()
     }
@@ -130,5 +137,19 @@ class SuggestionViewCell: UICollectionViewCell {
         titleLabel.heightAnchor.constraint(equalToConstant: 30).isActive = true
         
         priceLabel.heightAnchor.constraint(equalToConstant: 20).isActive = true
+    }
+}
+
+extension SuggestionViewCell: SelectionProtocol {
+    func select() {
+        if let img = UIImage(named: "checkmark") {
+            isSelectedImageView.image = img
+            isSelect = true
+        }
+    }
+    
+    func deselect() {
+        isSelectedImageView.image = UIImage()
+        isSelect = false
     }
 }
